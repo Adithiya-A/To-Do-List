@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "Poppins", serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(0,47,112,1) 48%, rgba(115,0,0,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDo{
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.toDolist h2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toDolist img{
+    height: 3rem;
+     margin-left: 1rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(170, 170, 170, 0.226);
+    border-radius: 30px;
+    padding-left: 20px;
+    height: 50px;
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+#add{
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 87);
+    color: white;
+}
+
+#add:active{
+    color: rgb(0, 0, 87);
+    background-color: rgb(0, 255, 255);
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+    padding: 10px 10px 10px 50px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url("Images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    left: 2px;
+}
+
+ul li.checked{
+    color: gray;
+    background-color: rgba(170, 170, 170, 0.24);
+    border-radius: 40px;
+    text-decoration: line-through;
+    position: relative;
+}
+
+ul li.checked::before{
+    background-image: url("Images/checked.png");
+}
