@@ -51,7 +51,7 @@ input{
     font-size: 16px;
 }
 
-#add{
+#add-task{
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -63,7 +63,7 @@ input{
     color: white;
 }
 
-#add:active{
+#add-task:active{
     color: rgb(0, 0, 87);
     background-color: rgb(0, 255, 255);
 }
@@ -100,4 +100,20 @@ ul li.checked{
 
 ul li.checked::before{
     background-image: url("Images/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 5px;
+}
+
+ul li span:hover{
+    background-color: rgba(128, 128, 128, 0.281);
+    border-radius: 50%;
 }
