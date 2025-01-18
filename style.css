@@ -117,3 +117,20 @@ ul li span:hover{
     background-color: rgba(128, 128, 128, 0.281);
     border-radius: 50%;
 }
+
+
+
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 450px) {
+    body{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .toDo{
+        width: 85%;
+    }
+}
